@@ -14,3 +14,7 @@ kubectl apply -f namespaces.yaml -f elastic.yaml -f kafka-ui.yaml -f kafka.yaml 
 ```sh
 minikube tunnel
 ```
+
+```sh
+kubectl exec -it elasticsearch-0 -n elastic -- ./bin/elasticsearch-setup-passwords interactive
+```
